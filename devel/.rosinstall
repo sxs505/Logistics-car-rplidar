@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pathfinder/catkin_rplidar/devel/setup.sh

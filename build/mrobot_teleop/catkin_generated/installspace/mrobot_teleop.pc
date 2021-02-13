@@ -1,0 +1,8 @@
+prefix=/home/pathfinder/catkin_rplidar/install
+
+Name: mrobot_teleop
+Description: Description of mrobot_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/pathfinder/catkin_rplidar/devel
+
+Name: robot_setup_tf
+Description: Description of robot_setup_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
