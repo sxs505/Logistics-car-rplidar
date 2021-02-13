@@ -1,4 +1,5 @@
 # catkin_rplidar
+硬件设备为intel nuc,思岚-a1/a2;usb to ttl；软件ubuntu-16.04 ros-kinetic;
  物流小车激光雷达方案，该方案为接触激光雷达与ROS后的初次实验，存在许多问题但对我个人来说具有学习和纪念意义。
 laser_scan_matcher为雷达扫描匹配的一个功能包，由于初次使用ROS完成项目当时还未接触对于底层IMU与轮速计部分的通信故采用此功能包来实现里程计数据的模拟。运行命令为roslaunch demo_gmapping_A1.launch
 learning_service为学习ROS所创建的功能包
