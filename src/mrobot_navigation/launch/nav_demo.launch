@@ -22,7 +22,7 @@
 
     <!-- 启动AMCL节点 -->
     <include file="$(find mrobot_navigation)/launch/amcl.launch" />
-    <!--	  #### start the laser scan_matcher ##############################-->
+    <!--#### start the laser scan_matcher ##############################-->
 
 
   <node pkg="laser_scan_matcher" type="laser_scan_matcher_node" 
@@ -37,14 +37,9 @@
 
   </node>
 <!-- 设置一个/odom与/map之间的静态坐标变换 -->
-    <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster" args="0 0 0 0 0 0 /map /odom 00" />
-
-<node pkg="tf" type="static_transform_publisher" name="map_to_laser_link" 
-    args="0.0 0.0 0.0 0.0 0.0 0.0 /map /laser_link 00" />
   <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" 
     args="0.0 0.0 0.0 0.0 0.0 0.0 /base_link /laser 00" />
-	<node pkg="tf" type="static_transform_publisher" name="laser_to_laser_link" 
-    args="0.0 0.0 0.0 0.0 0.0 0.0 /laser /laser_link 00" />
+
     <!-- 运行rviz -->
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find mrobot_navigation)/rviz/nav.rviz"/>
 
