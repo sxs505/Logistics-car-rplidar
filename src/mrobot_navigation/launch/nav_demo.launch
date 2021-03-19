@@ -36,7 +36,7 @@
     <param name="publy_tf" value="true"/>
 
   </node>
-<!-- 设置一个/odom与/map之间的静态坐标变换 -->
+<!-- 设置一个静态坐标变换 -->
   <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" 
     args="0.0 0.0 0.0 0.0 0.0 0.0 /base_link /laser 00" />
 
