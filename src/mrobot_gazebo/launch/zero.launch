@@ -1,10 +1,10 @@
 <launch> 
 	 <!-- 启动MRobot -->
-    <arg name="paused" default="false"/>
+   <!-- <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
     <arg name="gui" default="true"/>
     <arg name="headless" default="false"/>
-    <arg name="debug" default="false"/>
+    <arg name="debug" default="false"/> -->
    <!-- 加载机器人模型描述参数 -->
     <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find mrobot_gazebo)/urdf/mrobot_with_rplidar.urdf.xacro'" /> 
 
