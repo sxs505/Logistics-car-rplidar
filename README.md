@@ -7,3 +7,10 @@ mrobot_bringup、mrobot_description、mrobot_gazebo、mrobot_teleop等为《ROS�
 mrobot_navigation为导航功能包启动命令为 roslaunch nav_demo,该文件为自行编写的，主要涉及导航地图文件的选择、激光雷达启动、启动激光匹配增量功能包、坐标变换等
 topic_example为上位机与底盘控制板通信功能包，运行命令为rosrun topic_example publish_node，可根据使用需要修改
 由于初次接触ROS该项目存在诸多不足，在后续的AGV工业小车项目中方案与代码会更加成熟
+
+
+该项目下载后不可直接编译，可根据需要将src下的功能包模块移入自己的工作空间后，执行catkin_make即可
+error:
+1.No rule to make target '/usr/lib/x86_64-linux-gnu/libproj.so 
+sudo ln -s  /usr/lib/x86_64-linux-gnu/libproj.so.9 /usr/lib/x86_64-linux-gnu/libproj.so 
+如果文件夹内部没有此库，需要终端敲sudo apt-get install libproj-dev  ，安装即可！
