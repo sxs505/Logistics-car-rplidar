@@ -10,6 +10,7 @@ topic_example为上位机与底盘控制板通信功能包，运行命令为rosr
 
 
 该项目下载后不可直接编译，可根据需要将src下的功能包模块移入自己的工作空间后，执行catkin_make即可
+
 error:
 1.No rule to make target '/usr/lib/x86_64-linux-gnu/libproj.so 
 sudo ln -s  /usr/lib/x86_64-linux-gnu/libproj.so.9 /usr/lib/x86_64-linux-gnu/libproj.so 
